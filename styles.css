@@ -1,0 +1,67 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: black;
+    color: yellow;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Given Player Styling */
+#given-name {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+#given-stats-line1,
+#given-stats-line2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* New Player Styling */
+.new-player {
+    border: 2px solid yellow;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.stat-row {
+    border: 2px solid yellow;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.stat-row:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.flashing {
+    animation: flash 1s infinite alternate;
+}
+
+@keyframes flash {
+    0% { opacity: 1; }
+    100% { opacity: 0.3; }
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: yellow;
+}
