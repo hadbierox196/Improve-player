@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Better Player</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Given Player (Comparison Player) -->
+        <h1 id="given-name">Player Name</h1>
+        <p id="given-stats-line1"></p>
+        <p id="given-stats-line2"></p>
+
+        <!-- New Player -->
+        <div class="new-player">
+            <h2>My Goat</h2>
+            <div class="stat-row" onclick="selectRow('goals')">Goals: <span id="new-goals">_</span></div>
+            <div class="stat-row" onclick="selectRow('assists')">Assists: <span id="new-assists">_</span></div>
+            <div class="stat-row" onclick="selectRow('cl')">Champions League: <span id="new-cl">_</span></div>
+            <div class="stat-row" onclick="selectRow('bd')">Ballon d'Ors: <span id="new-bd">_</span></div>
+            <div class="stat-row" onclick="selectRow('league')">League Titles: <span id="new-league">_</span></div>
+        </div>
+
+        <!-- Flashing Player Name -->
+        <h2 id="player-name" class="flashing">Player Name</h2>
+
+        <button id="next-player" onclick="showNextPlayer()">Next Player</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
